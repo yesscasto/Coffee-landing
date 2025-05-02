@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кофейня</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -20,13 +21,13 @@
         </div>
     </header>
     <section class="hero">
-        <div class="container hero-content">
+        <div class="container hero-content" data-aos="fade-up">
             <h1>Настоящий вкус кофе</h1>
             <p>Загляни на чашечку настоящего эспрессо прямо рядом с домом</p>
             <a href="#menu" class="btn">Посмотреть меню</a>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
         <div class="container">
             <h2>О нас</h2>
             <p>
@@ -35,7 +36,7 @@
             </p>
         </div>
     </section>
-    <section class="menu" id="menu">
+    <section class="menu" id="menu"data-aos="zoom-in">
         <div class="container">
             <h2>Меню</h2>
             <div class="menu-items">
@@ -57,7 +58,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts" id="contacts">
+    <section class="contacts" id="contacts" data-aos="fade-left"
         <div class="container">
             <h2>Контакты</h2>
             <p>г.Москва, ул.Кофейная, 7</p>
@@ -65,5 +66,43 @@
             <p>Email: lovecoffee@gmail.com</p>
         </div>
     </section>
+    <header class="navbar">
+        <div class="container">
+        <a href="#" class="logo">Кофейня</a>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        </div>
+    </header>
+    <section class="contact-form" id="form" data-aos="fade-right">
+        <div class="container">
+            <h2>Оставить заявку</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <a href="#form">Заявка</a>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <section class="about" id="about" data-aos="fade-up">
+        <!-- Контент секции -->
+      </section>
+      
+      <section class="menu" id="menu" data-aos="zoom-in">
+        <!-- Меню -->
+      </section>
+      
+      <section class="contact-form" id="form" data-aos="fade-right">
+        <!-- Форма -->
+      </section>
 </body>
 </html>
